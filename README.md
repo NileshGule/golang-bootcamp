@@ -9,3 +9,11 @@ Initilaize a module named `webservice` uisng the `init` command
 go mod init github.com/NileshGule/golang-bootcamp/webservice
 
 ```
+
+## Build a module with `go build` command
+
+```code
+
+go build github.com/NileshGule/golang-bootcamp/webservice
+
+```
