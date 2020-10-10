@@ -1,0 +1,28 @@
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	const myName = "Nilesh"
+// 	fmt.Println("My Name is", myName)
+// 	fmt.Println("Hello World")
+
+// 	var batman string = "I am Batman"
+// 	fmt.Println(batman)
+
+// 	var superman string
+// 	superman = "I am Superman"
+// 	fmt.Println(superman)
+
+// 	spiderman := "I am Spiderman"
+// 	fmt.Println(spiderman)
+
+// 	spidermanRating := 3
+// 	fmt.Printf("%v, %T", spidermanRating, spidermanRating)
+
+// 	var ironman, captainAmerica string = "I am IronMan", "I am Captain America"
+
+// 	fmt.Println()
+// 	fmt.Println(ironman)
+// 	fmt.Println(captainAmerica)
+// }

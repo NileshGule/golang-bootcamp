@@ -1,0 +1,28 @@
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+	"time"
+)
+
+func main1() {
+	var name string
+	var userRating string
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Println("Please enter your full name")
+	name, _ = reader.ReadString('\n')
+	fmt.Println(name)
+
+	fmt.Print("Enter your rating between 1 and 5: ")
+	userRating, _ = reader.ReadString('\n')
+	convertedRating, _ := strconv.ParseFloat(strings.TrimSpace(userRating), 64)
+	fmt.Println(convertedRating)
+
+	fmt.Printf("Your rating was recorded in the system at %v",
+		time.Now().Format(time.Stamp))
+}

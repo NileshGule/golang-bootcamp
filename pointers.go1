@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main1() {
+	myName := "Nilesh"
+	var p *string
+
+	p = &myName
+
+	if p != nil {
+		fmt.Println("Value of p is ", *p)
+		fmt.Println("Address of pointer is ", p)
+	} else {
+		fmt.Println("Watch for nil")
+	}
+}

@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numbers [3]string
+
+	numbers[0] = "Uno"
+	numbers[1] = "Dos"
+	numbers[2] = "tres"
+
+	fmt.Println(numbers)
+
+	numbers2 := [3]string{"Un", "do", "trua"}
+	fmt.Println(numbers2)
+}
