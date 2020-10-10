@@ -1,28 +1,28 @@
-package main
+// package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"strconv"
-	"strings"
-)
+// import (
+// 	"bufio"
+// 	"fmt"
+// 	"os"
+// 	"strconv"
+// 	"strings"
+// )
 
-func main() {
-	// var myString string
-	// fmt.Println("Enter your name:")
-	// fmt.Scanln(&myString)
-	// fmt.Println(myString)
+// func main() {
+// 	// var myString string
+// 	// fmt.Println("Enter your name:")
+// 	// fmt.Scanln(&myString)
+// 	// fmt.Println(myString)
 
-	reader := bufio.NewReader(os.Stdin)
+// 	reader := bufio.NewReader(os.Stdin)
 
-	//fmt.Print("Enter your full name: ")
-	//fullName, _ := reader.ReadString('\n')
-	//fmt.Println(fullName)
+// 	//fmt.Print("Enter your full name: ")
+// 	//fullName, _ := reader.ReadString('\n')
+// 	//fmt.Println(fullName)
 
-	fmt.Print("Enter your rating: ")
-	userRating, _ := reader.ReadString('\n')
-	convertedRating, _ := strconv.ParseFloat(strings.TrimSpace(userRating), 10)
-	fmt.Println(convertedRating)
+// 	fmt.Print("Enter your rating: ")
+// 	userRating, _ := reader.ReadString('\n')
+// 	convertedRating, _ := strconv.ParseFloat(strings.TrimSpace(userRating), 10)
+// 	fmt.Println(convertedRating)
 
-}
+// }
