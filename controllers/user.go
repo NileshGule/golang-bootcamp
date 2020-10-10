@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"net/http"
 	"regexp"
 )
@@ -10,7 +11,11 @@ type UserController struct {
 }
 
 func (uc UserController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello from user controller"))
+	_, err := w.Write([]byte("Hello from user controller"))
+
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func NewUserController() *UserController {
