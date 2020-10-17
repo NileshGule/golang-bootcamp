@@ -123,7 +123,7 @@ func (uc *UserController) getAll(w http.ResponseWriter, r *http.Request) {
 	encodeResponseAsJSON(models.GetUsers(), w)
 }
 
-func (uc *UserController) get(int id, w http.ResponseWriter) {
+func (uc *UserController) get(id int, w http.ResponseWriter) {
 	u, err := models.GetUserById(id)
 
 	if err != nil {
